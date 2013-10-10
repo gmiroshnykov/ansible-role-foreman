@@ -1,0 +1,7 @@
+- name: foreman - install ruby
+  sudo: true
+  apt: pkg=ruby1.9.1-dev
+
+- name: foreman - install gem
+  sudo: true
+  gem: name=foreman state=present user_install=no
